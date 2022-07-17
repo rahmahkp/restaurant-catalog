@@ -1,0 +1,94 @@
+@media screen and (min-width: 600px) {
+    .nav-list {
+        flex-direction: row;
+        top: auto;
+        opacity: 1;
+        justify-content: flex-end;
+        background-color: transparent;
+        transform: translateY(0);
+    }
+    .nav-list a {
+        color: var(--clr-black);
+        margin: auto 1rem;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hero.down {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .restaurantList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .restaurant-card-detail {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .restaurant-img-detail {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .restaurant-title {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .restaurantList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .restaurant .restaurant-card-review {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .restaurantList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .restaurant .restaurant-card-review {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .hero {
+        height: 50vw;
+    }
+    .hero-inner {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 346px) {
+    .nav-logo a {
+        font-size: 1.2rem;
+    }
+    .skip-link {
+        padding: 0.2rem;
+    }
+    .nav-list,
+    .skip-link,
+    .restaurant-card-content>h3 {
+        font-size: 0.8rem;
+    }
+    .hero-inner,
+    .restaurant-title {
+        font-size: 1rem;
+    }
+    .content .article-title,
+    .restaurant-card-rating-score,
+    .restaurant-card p,
+    .restaurant p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .restaurantList {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .restaurant .restaurant-card-review {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
